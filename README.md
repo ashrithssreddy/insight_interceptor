@@ -1,4 +1,3 @@
-
 # Insight Interceptor
 
 ## Overview
@@ -32,7 +31,7 @@ To set up the Insight Interceptor on your local machine, follow these steps:
    Clone this repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/yourusername/insight-interceptor.git
+   git clone https://github.com/ashrithssreddy/insight-interceptor.git
    cd insight-interceptor
    ```
 
