@@ -91,7 +91,7 @@ To run the Insight Interceptor and start monitoring tweets, follow these steps:
 
 ## Future Enhancements
 
-We plan to extend the capabilities of Insight Interceptor by adding the following features:
+I plan to extend the capabilities of Insight Interceptor by adding the following features:
 
 - **Real-Time Sentiment Analysis**: Implementing a streaming data pipeline to continuously monitor sentiment in real-time.
   
@@ -101,7 +101,7 @@ We plan to extend the capabilities of Insight Interceptor by adding the followin
 
 ## Contributing
 
-We welcome contributions to enhance Insight Interceptor! To contribute:
+I welcome contributions to enhance Insight Interceptor! To contribute:
 
 1. Fork the repository.
 2. Create a new feature branch.
