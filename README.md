@@ -1,2 +1,1 @@
-# insight_interceptor
- 
+# Insight Interceptor
