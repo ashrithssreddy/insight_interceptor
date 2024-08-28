@@ -117,9 +117,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, feel free to reach out:
-
-- **Email**: [ashrithssreddy@gmail.com](mailto:ashrithssreddy@gmail.com)
-- **GitHub**: [GitHub](https://github.com/ashrithssreddy)
-
-I would love to hear from you and learn how you're using Insight Interceptor!
+Feel free to reach out if you have any questions or suggestions:
+- **[LinkedIn](https://www.linkedin.com/in/ashrithssreddy/)**
+- **[Twitter](https://www.x.com/ashrithssreddy/)**
