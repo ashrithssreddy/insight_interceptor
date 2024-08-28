@@ -1,5 +1,14 @@
 # Insight Interceptor
 
+[![Project Status](https://img.shields.io/badge/Project%20Status-In%20Progress-green)](https://github.com/ashrithssreddy/insight-interceptor)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue)](https://www.python.org/downloads/)
+[![OpenAI Powered](https://img.shields.io/badge/OpenAI-Powered-blue)](https://openai.com/)
+[![Twitter API](https://img.shields.io/badge/Twitter%20API-Integrated-blue)](https://developer.twitter.com/)
+[![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/ashrithssreddy/insight-interceptor)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ashrithssreddy/insight-interceptor/issues)
+
+
 ## Overview
 
 **Insight Interceptor** is an advanced Python tool designed to monitor and analyze user sentiment on X (formerly Twitter) using the OpenAI API. By leveraging AI-driven sentiment analysis and topic categorization, Insight Interceptor enables users to proactively respond to negative sentiment, gain insights into trending topics, and visualize sentiment distribution across a wide array of tweets. This tool is particularly valuable for businesses, social media managers, researchers, and analysts who require real-time sentiment tracking and comprehensive analysis.
