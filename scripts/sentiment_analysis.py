@@ -1,3 +1,12 @@
+import openai
+import yaml
+import json
+
+# Load API keys from the config file
+with open('config.yaml', 'r') as file:
+    config = yaml.safe_load(file)
+
+openai.api_key = config['openai']['api_key']
 
 def identify_topics(review_text):
     """Identify topics from the review text using the OpenAI API."""
