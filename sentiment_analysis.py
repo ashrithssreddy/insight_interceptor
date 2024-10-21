@@ -3,7 +3,7 @@ import yaml
 import json
 
 # Load API keys from the config file
-with open('config.yaml', 'r') as file:
+with open('config/config.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
 openai.api_key = config['openai']['api_key']
@@ -14,7 +14,11 @@ def identify_topics(review_text):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "user", "content": f"Extract the main topics discussed in the following text: '{review_text}'. List them."}
+                # {"role": "user", "content": f"Extract the main topics discussed in the following text: '{review_text}'. List them."}
+                # {"role": "user", "content": f"From the following review, identify specific features or aspects discussed and list them as separate topics: '{review_text}'. Please format your response as a JSON object with each topic as a key."}
+                {"role": "user", "content": f"From the following review, identify concise key topics (1-2 words) discussed: '{review_text}'. Provide a list of distinct topics."}
+
+
             ]
         )
         
@@ -50,6 +54,7 @@ def determine_sentiment(reviews_df):
                 topic_sentiments[topic] = None  # Append None in case of error
 
         # Append the topic sentiments in JSON format
+        print(json.dumps(topic_sentiments))
         sentiment_results.append(json.dumps(topic_sentiments))
 
     # Create a new DataFrame to hold sentiment results
