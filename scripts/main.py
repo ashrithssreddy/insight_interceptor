@@ -1,6 +1,5 @@
 import pandas as pd
-from sentiment_analysis import analyze_sentiment
-from topic_categorization import categorize_topic
+from sentiment_analysis import determine_sentiment
 
 def main():
     """Entry point for the Insight Interceptor."""
@@ -8,9 +7,8 @@ def main():
     # Load the dataset
     reviews_df = pd.read_csv('docs/play_store_reviews.csv')
 
-    # Create new columns for sentiment and topic
-    reviews_df['Sentiment'] = reviews_df['Review Text'].apply(analyze_sentiment)
-    reviews_df['Topic'] = reviews_df['Review Text'].apply(categorize_topic)
+    # Determine sentiment using the updated function
+    reviews_df = determine_sentiment(reviews_df)
 
     # Save the updated dataset
     updated_dataset_path = 'docs/play_store_reviews_categorized.csv'
