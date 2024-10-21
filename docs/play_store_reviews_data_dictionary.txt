@@ -1,0 +1,7 @@
+Review ID: Unique identifier for each review.
+Author Name: The name of the reviewer.
+Review Text: The content of the review.
+Star Rating: The rating given by the reviewer (1 to 5 scale).
+Helpfulness Count: The number of users who found the review helpful.
+Device Type: The device used for the review (e.g., Phone, Tablet, Chromebook).
+Date: The date when the review was posted.
