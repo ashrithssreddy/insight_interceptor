@@ -1,3 +1,4 @@
+import pandas as pd
 import openai
 import yaml
 import json
@@ -36,6 +37,9 @@ def determine_sentiment(reviews_df):
     for review_text in reviews_df['Review Text']:
         identified_topics = identify_topics(review_text)
         topic_sentiments = {}
+        
+        # Overall sentiment variable
+        overall_sentiment = None
 
         for topic in identified_topics:
             try:
@@ -53,11 +57,17 @@ def determine_sentiment(reviews_df):
                 print(f"Error determining sentiment for topic '{topic}' in review: {review_text}\nError: {e}")
                 topic_sentiments[topic] = None  # Append None in case of error
 
-        # Append the topic sentiments in JSON format
-        print(json.dumps(topic_sentiments))
-        sentiment_results.append(json.dumps(topic_sentiments))
+        # Calculate overall sentiment (you can define how to derive this)
+        overall_sentiment = "Neutral"  # Placeholder for overall sentiment calculation logic
+
+        # Append structured result
+        sentiment_results.append({
+            "topics": topic_sentiments,
+            "overall_sentiment": overall_sentiment
+        })
 
     # Create a new DataFrame to hold sentiment results
-    reviews_df['Sentiment JSON'] = sentiment_results  # Add JSON column to DataFrame
+    sentiment_df = pd.DataFrame(sentiment_results)
+    reviews_df = pd.concat([reviews_df, sentiment_df], axis=1)  # Combine original DataFrame with sentiments
 
     return reviews_df
